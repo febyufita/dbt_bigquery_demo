@@ -1,0 +1,22 @@
+models:
+  - name: stg_province
+    columns: 
+      - name: province_code
+        tests:
+          - unique
+          - not_null
+  - name: stg_region_cumulative_cases
+    columns: 
+      - name: region_code
+        tests:
+          - unique
+          - not_null
+  - name: stg_region_new_cases
+    columns:
+      - name: region_code
+        tests:
+          - unique
+          - not_null
+      - name: region_name
+        tests:
+          - not_null
