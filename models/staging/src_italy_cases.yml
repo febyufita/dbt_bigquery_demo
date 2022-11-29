@@ -5,12 +5,4 @@ sources:
     schema: covid19_italy
     tables:
       - name: data_by_province
-          loaded_at_field: date
-          freshness:
-            warn_after: {count: 7, period: day}
-            error_after: {count: 14, period: day}
       - name: data_by_region
-          loaded_at_field: date
-          freshness:
-            warn_after: {count: 7, period: day}
-            error_after: {count: 14, period: day}
